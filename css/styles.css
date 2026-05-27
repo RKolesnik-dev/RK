@@ -3341,9 +3341,9 @@ td:last-child {
 
 .s-intro__content-btns {
     --color-btn           : var(--color-text-dark);
-    --color-btn-text      : var(--color-white);
+    --color-btn-text      : var(--color-1-dark);
     --color-btn-hover     : var(--color-1);
-    --color-btn-hover-text: var(--color-white);
+    --color-btn-hover-text: var(--color-dark);
     margin-top            : var(--vspace-2);
 }
 
