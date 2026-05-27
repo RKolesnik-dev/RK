@@ -307,6 +307,7 @@
         ssGLightbox();
         ssSwiper();
         ssAlertBoxes();
+        ssBackToTop();
         ssMoveTo();
 
     })();
