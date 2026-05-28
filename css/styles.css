@@ -4419,7 +4419,7 @@ h6,
 .s-header.sticky,
 .s-header__nav {
     background-color: var(--color-white);
-    border-color    : rgba(0, 0, 0, 0.08);
+    border-color    : rgba(0, 0, 0, 0.635);
 }
 
 .s-header__menu-links a,
