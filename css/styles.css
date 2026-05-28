@@ -4396,6 +4396,7 @@ td:last-child {
     --color-btn-stroke-hover-text: var(--color-black);
 }
 
+html,
 body,
 .s-pagewrap,
 .s-intro,
@@ -4420,11 +4421,39 @@ h6,
     color: var(--color-white);
 }
 
-.s-header__inner,
-.s-header.sticky,
+.s-header {
+    top: min(var(--vspace-0_75), 4vh);
+}
+
+.s-header__inner {
+    background-color: rgba(255, 255, 255, 0.82);
+    border-color    : rgba(0, 0, 0, 0.2);
+    backdrop-filter  : blur(12px);
+}
+
+.s-header__inner {
+    border-radius: 12px;
+}
+
+.s-header.sticky {
+    top             : min(var(--vspace-0_75), 4vh);
+    background-color: transparent;
+    border          : none;
+    box-shadow      : none;
+}
+
+.s-header.sticky .s-header__inner {
+    --width-grid-max: calc(var(--width-sixteen-cols) - calc(var(--gutter) * 2));
+    background-color: rgba(255, 255, 255, 0.82);
+    border          : 1px solid rgba(0, 0, 0, 0.2);
+    border-radius   : 12px;
+    box-shadow      : var(--box-shadow);
+    backdrop-filter : blur(12px);
+}
+
 .s-header__nav {
-    background-color: var(--color-white);
-    border-color    : rgba(0, 0, 0, 0.635);
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius   : 12px;
 }
 
 .s-header__menu-links a,
@@ -4457,4 +4486,11 @@ h6,
 
 .s-intro__scroll-down a {
     color: var(--color-white);
+}
+
+@media screen and (max-width: 900px) {
+    .s-header__inner,
+    .s-header__nav {
+        border-radius: 0;
+    }
 }
