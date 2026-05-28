@@ -4140,6 +4140,11 @@ td:last-child {
     margin-top: 0;
 }
 
+.s-footer__site-links h5 {
+    margin-top : 0.3em;
+    line-height: inherit;
+}
+
 .s-footer__block {
     margin-bottom: var(--vspace-0_5);
 }
