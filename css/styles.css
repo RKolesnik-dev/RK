@@ -4141,8 +4141,12 @@ td:last-child {
 }
 
 .s-footer__site-links h5 {
-    margin-top : 0.3em;
-    line-height: inherit;
+    font-family  : var(--font-1);
+    font-size    : var(--text-md);
+    line-height  : var(--vspace-1_25);
+    margin-top   : 0;
+    margin-bottom: var(--vspace-1);
+    transform    : translateY(0.35em);
 }
 
 .s-footer__block {
