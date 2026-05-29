@@ -4084,7 +4084,7 @@ td:last-child {
 
 .counter-items__item {
     flex         : none;
-    width        : 50%;
+    width        : 33.3333333333%;
     margin-bottom: var(--vspace-0_625);
 }
 
@@ -4109,6 +4109,10 @@ td:last-child {
  * numbers
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
+    .counter-items__item {
+        width: 100%;
+    }
+
     .counter-items .num {
         font-size: var(--text-huge-1);
     }
