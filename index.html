@@ -10,11 +10,12 @@
 
     <script>
         document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
+        document.documentElement.classList.add('js', 'ss-show');
     </script>
 
     <!-- CSS
     ================================================== -->
+    <link rel="preload" href="images/intro-bg.webp" as="image" fetchpriority="high">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -31,17 +32,6 @@
 <body id="top">
 
     
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-
     <!-- page wrap
     ================================================== -->
     <div id="page" class="s-pagewrap">
@@ -55,7 +45,7 @@
                 <div class="s-header__block">
                     <div class="s-header__logo">
                         <a class="logo" href="index.html">
-                            <img src="images/photo.webp" alt="Homepage">
+                            <img src="images/photo.webp" width="563" height="125" decoding="async" alt="Homepage">
                         </a>
                     </div>
 
@@ -102,7 +92,7 @@
             </div> <!-- s-intro__content -->
 
             <div class="s-intro__content-media">                               
-                <img src="images/intro-bg.webp" srcset="images/intro-bg.webp 1x, images/intro-bg.webp 2x" alt="">
+                <img src="images/intro-bg.webp" width="2000" height="2000" fetchpriority="high" decoding="async" alt="">
             </div> <!-- s-intro__content-media -->                
 
             <div class="s-intro__scroll-down">
@@ -199,7 +189,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-turban.jpg" class="entry__link glightbox" data-glightbox="title: Dress retouch for vitkac.com; description: .entry__desc-01">
                         <div class="entry__thumb">
-                            <img src="images/folio/white_turban.jpg" srcset="images/folio/white_turban.jpg 1x, images/folio/white_turban@2x.jpg 2x" alt="">
+                            <img src="images/folio/white_turban.jpg" srcset="images/folio/white_turban.jpg 1x, images/folio/white_turban@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Vitkac retouch</h4>
@@ -224,7 +214,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-woodcraft.jpg" class="entry__link glightbox" data-glightbox="title: Jewelry; description: .entry__desc-02">
                         <div class="entry__thumb">
-                            <img src="images/folio/woodcraft.jpg" srcset="images/folio/woodcraft.jpg 1x, images/folio/woodcraft@2x.jpg 2x" alt="">
+                            <img src="images/folio/woodcraft.jpg" srcset="images/folio/woodcraft.jpg 1x, images/folio/woodcraft@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Jewelry</h4>
@@ -243,7 +233,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-tulips.jpg" class="entry__link glightbox" data-glightbox="title: Uzum model retouch; description: .entry__desc-03">
                         <div class="entry__thumb">
-                            <img src="images/folio/caffeine_and_tulips.jpg" srcset="images/folio/caffeine_and_tulips.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="">
+                            <img src="images/folio/caffeine_and_tulips.jpg" srcset="images/folio/caffeine_and_tulips.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Uzum</h4>
@@ -262,7 +252,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-grayscale.jpg" class="entry__link glightbox" data-glightbox="title: Product retouch; description: .entry__desc-04">
                         <div class="entry__thumb">
-                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, images/folio/grayscale@2x.jpg 2x" alt="">
+                            <img src="images/folio/grayscale.jpg" srcset="images/folio/grayscale.jpg 1x, images/folio/grayscale@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Uzum</h4>
@@ -282,7 +272,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-lamp.jpg" class="entry__link glightbox" data-glightbox="title: Radiks medicine; description: .entry__desc-05">
                         <div class="entry__thumb">
-                            <img src="images/folio/lamp.jpg" srcset="images/folio/lamp.jpg 1x, images/folio/lamp@2x.jpg 2x" alt="">
+                            <img src="images/folio/lamp.jpg" srcset="images/folio/lamp.jpg 1x, images/folio/lamp@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Radiks medicals</h4>
@@ -302,7 +292,7 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
                 <div class="column entry">
                     <a href="images/folio/gallery/g-tropical.jpg" class="entry__link glightbox" data-glightbox="title: Model; description: .entry__desc-06">
                         <div class="entry__thumb">
-                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, images/folio/tropical@2x.jpg 2x" alt="">
+                            <img src="images/folio/tropical.jpg" srcset="images/folio/tropical.jpg 1x, images/folio/tropical@2x.jpg 2x" width="750" height="750" loading="lazy" decoding="async" sizes="(min-width: 801px) 50vw, 100vw" alt="">
                         </div>
                         <div class="entry__info">
                             <h4 class="entry__title">Uzum</h4>
@@ -432,8 +422,8 @@ Focused on clean presentation, natural retouching, accurate colors, and conversi
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </body>
 </html>
